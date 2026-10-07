@@ -1,0 +1,232 @@
+.heroSection {
+  position: relative;
+  padding: 4.5rem 0 3.5rem 0;
+  background: radial-gradient(circle at 10% 20%, rgba(217, 83, 56, 0.05) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(11, 40, 68, 0.04) 0%, transparent 40%),
+              var(--color-bg-page);
+  overflow: hidden;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.badgePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-terracotta-soft);
+  color: var(--color-terracotta);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 8px rgba(217, 83, 56, 0.12);
+}
+
+.headline {
+  font-size: clamp(2.5rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+  color: var(--color-navy);
+  line-height: 1.14;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.headlineGradient {
+  color: var(--color-terracotta);
+  position: relative;
+  display: inline-block;
+}
+
+.subheadline {
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: 2.25rem;
+  max-width: 580px;
+}
+
+.ctaGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.heroStatsRow {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.miniStat {
+  display: flex;
+  flex-direction: column;
+}
+
+.miniStatNumber {
+  font-family: var(--font-family-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  line-height: 1.1;
+}
+
+.miniStatLabel {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+/* Image Visual Column */
+.visualWrapper {
+  position: relative;
+}
+
+.imageFrame {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid #FFFFFF;
+}
+
+.heroImg {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.heroImg:hover {
+  transform: scale(1.02);
+}
+
+.floatingBadge {
+  position: absolute;
+  bottom: -1.25rem;
+  left: -1.25rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  padding: 1.1rem 1.4rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  max-width: 280px;
+}
+
+.floatingIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-terracotta-soft);
+  color: var(--color-terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.floatingTitle {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-navy);
+  line-height: 1.2;
+}
+
+.floatingSub {
+  font-size: 0.775rem;
+  color: var(--color-text-muted);
+}
+
+.floatingBadgeRight {
+  position: absolute;
+  top: 1.5rem;
+  right: -1rem;
+  background: rgba(11, 40, 68, 0.92);
+  color: #FFFFFF;
+  backdrop-filter: blur(10px);
+  padding: 0.7rem 1.1rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Trust Ribbon */
+.trustRibbon {
+  margin-top: 3.5rem;
+  padding: 1.25rem 2rem;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.trustIcon {
+  color: var(--color-forest);
+}
+
+.trustTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.trustSub {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 992px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .heroImg {
+    height: 380px;
+  }
+  .floatingBadge {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+  .floatingBadgeRight {
+    display: none;
+  }
+}

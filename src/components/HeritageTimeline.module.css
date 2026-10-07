@@ -1,0 +1,166 @@
+.timelineWrapper {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto 4rem auto;
+  padding: 1rem 0;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--color-border);
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2.5rem;
+  position: relative;
+  width: 50%;
+}
+
+.timelineItem:nth-child(even) {
+  align-self: flex-end;
+  margin-left: auto;
+  justify-content: flex-start;
+}
+
+.timelineCard {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  width: 88%;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.timelineCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-terracotta);
+  box-shadow: var(--shadow-md);
+}
+
+.timelineNode {
+  position: absolute;
+  top: 1.5rem;
+  right: -2.35rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--color-terracotta);
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 0 0 2px var(--color-terracotta);
+}
+
+.timelineItem:nth-child(even) .timelineNode {
+  right: auto;
+  left: -2.35rem;
+}
+
+.timelineYear {
+  display: inline-block;
+  font-family: var(--font-family-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-terracotta);
+  margin-bottom: 0.35rem;
+}
+
+.timelineTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.timelineText {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+/* Leadership and Governance Cards */
+.leadershipSection {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  padding: 3rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.leadershipHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.leadershipHeader h3 {
+  font-size: 1.85rem;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.leadersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.leaderCard {
+  background-color: var(--color-bg-page);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.leaderRole {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.leaderName {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 0.4rem;
+}
+
+.leaderAffiliation {
+  font-size: 0.825rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .timelineLine {
+    left: 20px;
+  }
+  .timelineItem {
+    width: 100%;
+    padding-left: 50px;
+    justify-content: flex-start;
+  }
+  .timelineItem:nth-child(even) {
+    margin-left: 0;
+    padding-left: 50px;
+  }
+  .timelineCard {
+    width: 100%;
+  }
+  .timelineNode {
+    left: 11px !important;
+    right: auto !important;
+  }
+  .leadersGrid {
+    grid-template-columns: 1fr;
+  }
+}

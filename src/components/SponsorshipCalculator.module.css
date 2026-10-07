@@ -1,0 +1,237 @@
+.calcCard {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+}
+
+.calcControls {
+  display: flex;
+  flex-direction: column;
+}
+
+.frequencyToggle {
+  display: inline-flex;
+  background-color: var(--color-bg-subtle);
+  padding: 0.35rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 2rem;
+  border: 1px solid var(--color-border);
+  width: fit-content;
+}
+
+.freqBtn {
+  padding: 0.5rem 1.4rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+}
+
+.freqBtnActive {
+  background-color: var(--color-navy);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-sm);
+}
+
+.tiersGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.tierCard {
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  cursor: pointer;
+  background-color: var(--color-bg-page);
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.tierCard:hover {
+  border-color: var(--color-terracotta);
+  background-color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.tierCardActive {
+  border-color: var(--color-terracotta);
+  background-color: var(--color-bg-warm-tint);
+  box-shadow: 0 4px 14px rgba(217, 83, 56, 0.12);
+}
+
+.tierAmount {
+  font-family: var(--font-family-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 0.25rem;
+}
+
+.tierTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  margin-bottom: 0.35rem;
+}
+
+.tierDescription {
+  font-size: 0.775rem;
+  color: var(--color-text-muted);
+  line-height: 1.35;
+}
+
+.customInputWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.customInputWrapper label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.4rem;
+}
+
+.customInputGroup {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.6rem 1rem;
+  background-color: #FFFFFF;
+  gap: 0.5rem;
+}
+
+.customInputGroup:focus-within {
+  border-color: var(--color-terracotta);
+}
+
+.rupeePrefix {
+  font-weight: 800;
+  color: var(--color-navy);
+  font-size: 1.1rem;
+}
+
+.customInput {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 100%;
+  color: var(--color-navy);
+}
+
+/* Impact Summary Column */
+.impactSummaryCard {
+  background: linear-gradient(145deg, #09223A 0%, #123456 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summaryHeader {
+  margin-bottom: 1.5rem;
+}
+
+.summaryHeader h4 {
+  color: #FFFFFF;
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.summaryHeader p {
+  color: #B4C7D9;
+  font-size: 0.85rem;
+}
+
+.totalDisplay {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.totalLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.totalAmount {
+  font-family: var(--font-family-heading);
+  font-size: 2.35rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.totalPeriod {
+  font-size: 0.85rem;
+  color: #B4C7D9;
+}
+
+.breakdownList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.breakdownItem {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.875rem;
+  color: #E2ECF5;
+}
+
+.breakdownCheck {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: rgba(46, 204, 113, 0.2);
+  color: #2ECC71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.taxNotice {
+  font-size: 0.775rem;
+  color: #9AB2C8;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .calcCard {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .tiersGrid {
+    grid-template-columns: 1fr;
+  }
+}

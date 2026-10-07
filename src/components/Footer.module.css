@@ -1,0 +1,147 @@
+.footer {
+  background-color: var(--color-bg-dark);
+  color: #C3D5E8;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.footerBrand h3 {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+
+.footerBrandSubtitle {
+  font-size: 0.8125rem;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.footerBio {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #A3B8CC;
+  margin-bottom: 1.5rem;
+}
+
+.regBadgesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #7E96AD;
+  border-left: 2px solid var(--color-terracotta);
+  padding-left: 0.75rem;
+}
+
+.footerCol h4 {
+  font-size: 1.05rem;
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.footerLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footerLinks a {
+  font-size: 0.9rem;
+  color: #A3B8CC;
+  transition: color var(--transition-fast);
+}
+
+.footerLinks a:hover {
+  color: #FFFFFF;
+  padding-left: 3px;
+}
+
+/* Newsletter Signup */
+.newsletterBox p {
+  font-size: 0.875rem;
+  color: #A3B8CC;
+  margin-bottom: 1rem;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletterInput {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  flex-grow: 1;
+}
+
+.newsletterInput:focus {
+  outline: none;
+  border-color: var(--color-terracotta);
+}
+
+.newsletterInput::placeholder {
+  color: #7E96AD;
+}
+
+/* Bottom Bar */
+.bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.8125rem;
+  color: #7E96AD;
+}
+
+.bottomLegalLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.bottomLegalLinks a {
+  color: #7E96AD;
+}
+
+.bottomLegalLinks a:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+  .bottomBar {
+    flex-direction: column;
+    text-align: center;
+  }
+}

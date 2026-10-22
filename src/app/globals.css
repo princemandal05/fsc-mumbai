@@ -13,27 +13,46 @@
   --space-20: 5rem;    /* 80px */
   --space-24: 6rem;    /* 96px */
 
-  /* Curated Harmonious Palette */
+  /* Curated Harmonious Palette - Brand Core */
   --color-primary-dark: #071A2E;
   --color-primary: #0C2340;
   --color-primary-light: #163B66;
   --color-primary-subtle: #EEF4FA;
 
+  /* Aliases for Navy Domain Tokens */
+  --color-navy-dark: #071A2E;
+  --color-navy: #0C2340;
+  --color-navy-light: #163B66;
+  --color-navy-soft: #EEF4FA;
+  --color-bg-dark: #071A2E;
+
+  /* Accent Terracotta / Warm Coral */
   --color-accent: #E0533C;
   --color-accent-hover: #C73E28;
   --color-accent-subtle: #FDF2F0;
+  --color-terracotta: #E0533C;
+  --color-terracotta-hover: #C73E28;
+  --color-terracotta-soft: #FDF2F0;
 
+  /* Gold / Amber Accents */
   --color-gold: #D97706;
   --color-gold-subtle: #FEF3C7;
+  --color-gold-soft: #FEF3C7;
 
+  /* Forest Green */
   --color-forest: #0D7A57;
   --color-forest-subtle: #E6F4EE;
+  --color-forest-soft: #E6F4EE;
 
+  /* Backgrounds & Surfaces */
   --color-bg-page: #F8FAFC;
   --color-bg-surface: #FFFFFF;
   --color-bg-subtle: #F1F5F9;
+  --color-bg-warm-tint: #FFF7ED;
 
-  --color-text-title: #0F172A;
+  /* High Contrast Typography */
+  --color-text-title: #071A2E;
+  --color-text-main: #0F172A;
   --color-text-body: #334155;
   --color-text-muted: #64748B;
   --color-text-light: #94A3B8;
@@ -59,6 +78,7 @@
   /* Typography */
   --font-body: var(--font-sans), system-ui, -apple-system, sans-serif;
   --font-heading: var(--font-heading), system-ui, -apple-system, sans-serif;
+  --font-family-heading: var(--font-heading), 'Outfit', system-ui, -apple-system, sans-serif;
 
   /* Transitions */
   --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);

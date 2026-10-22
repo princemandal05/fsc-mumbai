@@ -21,18 +21,25 @@
 
 .footerBrandSubtitle {
   font-size: 0.8125rem;
-  color: var(--color-gold);
+  color: #FBBF24;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 700;
   margin-bottom: 1.25rem;
-  display: block;
+  display: inline-block;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.footerBrandSubtitle:hover {
+  color: #FFFFFF;
+  transform: translateX(2px);
 }
 
 .footerBio {
   font-size: 0.9rem;
   line-height: 1.65;
-  color: #A3B8CC;
+  color: #CBD5E1;
   margin-bottom: 1.5rem;
 }
 
@@ -41,7 +48,7 @@
   flex-direction: column;
   gap: 0.5rem;
   font-size: 0.8rem;
-  color: #7E96AD;
+  color: #94A3B8;
   border-left: 2px solid var(--color-terracotta);
   padding-left: 0.75rem;
 }
@@ -51,6 +58,7 @@
   color: #FFFFFF;
   margin-bottom: 1.25rem;
   font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .footerLinks {
@@ -62,20 +70,21 @@
 
 .footerLinks a {
   font-size: 0.9rem;
-  color: #A3B8CC;
-  transition: color var(--transition-fast);
+  color: #CBD5E1;
+  transition: all var(--transition-fast);
 }
 
 .footerLinks a:hover {
   color: #FFFFFF;
-  padding-left: 3px;
+  padding-left: 4px;
 }
 
 /* Newsletter Signup */
 .newsletterBox p {
   font-size: 0.875rem;
-  color: #A3B8CC;
+  color: #CBD5E1;
   margin-bottom: 1rem;
+  line-height: 1.55;
 }
 
 .newsletterForm {
@@ -86,7 +95,7 @@
 
 .newsletterInput {
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-sm);
   padding: 0.65rem 0.9rem;
   color: #FFFFFF;
@@ -97,15 +106,16 @@
 .newsletterInput:focus {
   outline: none;
   border-color: var(--color-terracotta);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .newsletterInput::placeholder {
-  color: #7E96AD;
+  color: #94A3B8;
 }
 
 /* Bottom Bar */
 .bottomBar {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
@@ -113,7 +123,7 @@
   flex-wrap: wrap;
   gap: 1.25rem;
   font-size: 0.8125rem;
-  color: #7E96AD;
+  color: #94A3B8;
 }
 
 .bottomLegalLinks {
@@ -122,7 +132,8 @@
 }
 
 .bottomLegalLinks a {
-  color: #7E96AD;
+  color: #94A3B8;
+  transition: color var(--transition-fast);
 }
 
 .bottomLegalLinks a:hover {

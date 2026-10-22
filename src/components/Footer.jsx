@@ -20,7 +20,15 @@ export default function Footer() {
           {/* Col 1: Identity & Compliance */}
           <div className={styles.footerBrand}>
             <h3>Family Service Centre</h3>
-            <span className={styles.footerBrandSubtitle}>Eucharistic Congress Bldg III, Colaba, Mumbai</span>
+            <a
+              href="https://maps.google.com/?q=Family+Service+Centre+Eucharistic+Congress+Building+III+Colaba+Mumbai+400001"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.footerBrandSubtitle}
+              title="Open Location in Google Maps"
+            >
+              📍 Eucharistic Congress Bldg III, Colaba, Mumbai ↗
+            </a>
             <p className={styles.footerBio}>
               A secular, non-profit child protection organization committed to empowering families, 
               facilitating transparent CARA adoptions, and keeping vulnerable children out of institutions through education and crisis grants.
@@ -84,7 +92,7 @@ export default function Footer() {
                 </button>
               </form>
             )}
-            <p style={{ fontSize: "0.775rem", color: "#7E96AD", marginTop: "1rem" }}>
+            <p style={{ fontSize: "0.775rem", color: "#94A3B8", marginTop: "1rem", lineHeight: "1.5" }}>
               Tax exemption certificates under Section 80G issued digitally for all Indian contributions.
             </p>
           </div>

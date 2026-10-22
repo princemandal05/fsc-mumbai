@@ -29,7 +29,7 @@ export default function Navbar() {
     <>
       {/* Sleek Top Authority & Contact Bar */}
       <div className={styles.topBar}>
-        <div className={`container ${styles.topBarContainer}`}>
+        <div className={styles.topBarContainer}>
           <div className={styles.topBadgeGroup}>
             <span className={styles.badgeItem}>
               <span className={styles.goldDot}></span>
@@ -63,7 +63,7 @@ export default function Navbar() {
 
       {/* Main Luxury Header */}
       <header className={styles.header}>
-        <div className={`container ${styles.headerContainer}`}>
+        <div className={styles.headerContainer}>
           {/* Brand Emblem & Titles */}
           <Link href="/" className={styles.brand} aria-label="Family Service Centre Homepage">
             <div className={styles.brandIcon}>
@@ -78,7 +78,7 @@ export default function Navbar() {
           </Link>
 
           {/* Symmetrical Navigation Links */}
-          <nav aria-label="Main Navigation">
+          <nav className={styles.navWrapper} aria-label="Main Navigation">
             <ul className={styles.navMenu}>
               <li>
                 <Link href="/" className={`${styles.navLink} ${isActive("/") ? styles.activeNavLink : ""}`}>

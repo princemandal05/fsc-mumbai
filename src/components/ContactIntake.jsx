@@ -53,6 +53,15 @@ export default function ContactIntake() {
                     5, Convent Street, Colaba<br />
                     Mumbai – 400 001, Maharashtra, India
                   </div>
+                  <a
+                    href="https://maps.google.com/?q=Family+Service+Centre+Eucharistic+Congress+Building+III+Colaba+Mumbai+400001"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.mapLinkBadge}
+                  >
+                    <span>🗺️ Open in Google Maps</span>
+                    <span>↗</span>
+                  </a>
                 </div>
               </div>
 
@@ -196,6 +205,86 @@ export default function ContactIntake() {
                 </button>
               </form>
             )}
+          </div>
+        </div>
+
+        {/* Interactive Google Map & Location Finder Card */}
+        <div className={styles.mapCard}>
+          <div className={styles.mapHeader}>
+            <div>
+              <div className={styles.mapBadge}>
+                <span>📍</span>
+                <span>Interactive Location Finder</span>
+              </div>
+              <h3 className={styles.mapTitle}>Visit Family Service Centre in Colaba</h3>
+              <p className={styles.mapSubtitle}>
+                Eucharistic Congress Building No. III, 5 Convent Street, Colaba, Mumbai – 400 001 (Behind Regal Cinema)
+              </p>
+            </div>
+            <div className={styles.mapActions}>
+              <a
+                href="https://maps.google.com/?q=Family+Service+Centre+Eucharistic+Congress+Building+III+Colaba+Mumbai+400001"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline btn-sm"
+              >
+                Open Google Maps ↗
+              </a>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Family+Service+Centre+Eucharistic+Congress+Building+III+Colaba+Mumbai+400001"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-sm"
+              >
+                Get Directions 🚗
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.mapFrameWrapper}>
+            <iframe
+              title="Family Service Centre Headquarters Location Map"
+              src="https://maps.google.com/maps?q=Family+Service+Centre+Eucharistic+Congress+Building+III+5+Convent+Street+Colaba+Mumbai+400001&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="390"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className={styles.mapIframe}
+            />
+          </div>
+
+          <div className={styles.transitRow}>
+            <div className={styles.transitBox}>
+              <div className={styles.transitIcon}>🚆</div>
+              <div>
+                <h4 className={styles.transitTitle}>By Local Train</h4>
+                <p className={styles.transitDesc}>
+                  10–12 mins from <strong>CSMT (Central)</strong> and <strong>Churchgate (Western)</strong> via taxi or BEST feeder bus.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.transitBox}>
+              <div className={styles.transitIcon}>🚌</div>
+              <div>
+                <h4 className={styles.transitTitle}>By BEST Bus</h4>
+                <p className={styles.transitDesc}>
+                  Frequent buses stop at <strong>Regal Cinema / SP Mukherjee Chowk (Museum)</strong> &amp; <strong>Colaba Depot</strong>.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.transitBox}>
+              <div className={styles.transitIcon}>🏛️</div>
+              <div>
+                <h4 className={styles.transitTitle}>Landmarks</h4>
+                <p className={styles.transitDesc}>
+                  Located on Convent Street right behind Regal Cinema, adjacent to Cathedral of the Holy Name.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

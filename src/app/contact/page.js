@@ -46,10 +46,10 @@ export default function ContactPage() {
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
             <div className="card" style={{ padding: "1.75rem" }}>
-              <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🚆</div>
-              <h4 style={{ fontSize: "1.15rem", color: "var(--color-navy)", marginBottom: "0.35rem" }}>Getting to Our Office</h4>
+              <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>📅</div>
+              <h4 style={{ fontSize: "1.15rem", color: "var(--color-navy)", marginBottom: "0.35rem" }}>Consultation Appointments</h4>
               <p style={{ fontSize: "0.875rem", color: "var(--color-text-muted)", lineHeight: 1.55 }}>
-                Located at Eucharistic Congress Building No. III, 5 Convent Street, Colaba. Accessible via Chhatrapati Shivaji Maharaj Terminus (CSMT) and Churchgate railway stations by taxi or BEST bus.
+                Prior appointments are highly recommended for CARA adoption guidance and psycho-social counseling to guarantee confidential one-on-one time with a senior caseworker.
               </p>
             </div>
 
